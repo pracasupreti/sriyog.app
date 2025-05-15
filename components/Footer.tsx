@@ -7,12 +7,12 @@ export default function Footer(){
                 className="flex flex-col md:flex-row items-center space-y-4 md:space-x-6 justify-center md:justify-between">
                 <div
                     className="text-xs md:text-base flex flex-col items-center md:flex-row md:justify-end md:items-center md:space-x-2 ">
-                    <p className="all-right text-sm text-center ">All Rights Reserved. &copy; <span id="currentYear"></span> SRIYOG
+                    <p className="all-right text-sm text-center ">All Rights Reserved. &copy; <span>2025</span> SRIYOG
                         Consulting Pvt. Ltd. <span className="bar">| </span><span className="power">Powered By Microsoft For Startups</span> </p>
 
-                    <script>
+                    {/* <script>
                         document.getElementById("currentYear").innerText = new Date().getFullYear();
-                    </script>
+                    </script> */}
                 </div>
               {/* <div className="flex space-x-2  md:flex md:ml-auto">
                   

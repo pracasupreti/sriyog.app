@@ -1,14 +1,14 @@
 export default function Footer(){
     return(
         <>
-         <footer className="footer bg-white border-t shadow-t py-4 px-3 md:px-32">
+         <footer className="footer bg-white border-md shadow-t py-4 px-3 md:px-15">
         <div className="max-w-screen-xl ">
             <div
-                className="flex flex-col md:flex-row items-center space-y-4 md:space-x-6 justify-center md:justify-between">
+                className="flex flex-col md:flex-row md:items-center md:justify-between w-full px-4 md:px-10">
                 <div
-                    className="text-xs md:text-base flex flex-col items-center md:flex-row md:justify-end md:items-center md:space-x-2 ">
-                    <p className="all-right text-sm text-center ">All Rights Reserved. &copy; <span>2025</span> SRIYOG
-                        Consulting Pvt. Ltd. <span className="bar">| </span><span className="power">Powered By Microsoft For Startups</span> </p>
+                    className="text-xs md:text-base text-center md:text-left">
+                    <p className="text-[11px] sm:text-xs md:text-sm text-black text-center md:text-left leading-snug sm:leading-normal flex flex-wrap justify-center md:justify-start items-center gap-x-1">All Rights Reserved. &copy; <span>2025</span> SRIYOG
+                        Consulting Pvt. Ltd. <span className="bar">| </span><span className="power"> Powered By Microsoft For Startups</span> </p>
 
                     {/* <script>
                         document.getElementById("currentYear").innerText = new Date().getFullYear();
@@ -19,7 +19,7 @@ export default function Footer(){
                     <img src="images/google.png" alt=""className="h-9">
                     <img src="images/apple.png" alt="" className="h-9">
                 </div> */}
-                <div className="footer-icon flex space-x-6 pr-0 md:pr-16">
+                <div className="footer-icon flex justify-center md:justify-end space-x-6 mt-2 md:mt-0">
                    
                     <a href="https://www.facebook.com/sriyogdotcom" target="_blank"> <svg 
                             xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36"

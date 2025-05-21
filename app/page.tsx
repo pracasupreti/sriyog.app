@@ -2,7 +2,7 @@ export default function Home() {
   return (
    <>
     <div
-        className="desktop-section mx-4 md:mx-48 my-8 md:my-10 flex flex-col md:flex-row justify-center md:justify-between items-center">
+        className="desktop-section mx-4 md:mx-35 my-8 md:my-10 flex flex-col md:flex-row justify-center md:justify-between items-center">
         <div className="flex flex-col items-center md:items-center space-y-6">
             <h1 className=" text-md md:text-4xl  text-center md:text-left">Find Skilled Professionals</h1>
             <p className="text-xl text-center md:text-left">100K+ Downloads</p>

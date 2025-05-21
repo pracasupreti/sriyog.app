@@ -137,9 +137,7 @@ export default function Header() {
       {/* Toggle menu visibility with state */}
       <div
   id="menu"
-  className={`md:hidden px-6 py-4 shadow-md bg-white text-sm font-medium overflow-hidden transition-all duration-300 ease-in-out ${
-    menuOpen ? "opacity-100 max-h-96" : "opacity-0 max-h-0"
-  }`}
+  className={"md:hidden px-6 py-0 shadow-md bg-white text-sm font-medium overflow-hidden transition-all duration-300 ease-in-out opacity-0 max-h-0"}
 >
         <div className="container mx-auto">
           <a href="https://sriyog.com/" className="block  py-2">

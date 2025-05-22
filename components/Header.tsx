@@ -6,7 +6,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <nav className="bg-white border-gray-200 shadow-md px-3 sm:px-6 md:px-8 lg:px-20">
+      <nav className="bg-white border-gray-200 shadow-md px-3 sm:px-6 md:px-8 lg:px-60">
         <div className="navbar max-w-screen-xl flex items-center justify-between mx-auto p-4">
           <a
             href="https://sriyog.com/"
@@ -24,14 +24,14 @@ export default function Header() {
           </a>
 
           <div
-            className="hidden md:flex md:w-auto items-center justify-between"
+            className="hidden md:flex md:w-auto items-center gap-6"
             id="navbar-default"
           >
             <ul className="font-semibold text-xs sm:text-xs md:text-[11px] lg:text-base flex flex-wrap p-4 md:p-0 mt-4 mr-2 md:flex-row md:space-x-3 lg:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white max-w-full">
               <li className="pl-0 ">
                 <a
                   href="https://sriyog.com"
-                  className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent md:p-0"
+                  className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent lg:text-[14px] md:p-0 md:text-[13px] max-[1136px]:text-[10px]"
                   aria-current="page"
                 >
                   Home{" "}
@@ -40,7 +40,7 @@ export default function Header() {
               <li className="">
                 <a
                   href="https://sriyog.com/about"
-                  className="block py-2 px-3 text-gray-500 rounded hover:text-[#8B1414] md:hover:bg-transparent md:border-0 md: md:p-0"
+                  className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent md:p-0 lg:text-[14px] md:text-[13px] max-[1136px]:text-[10px]"
                 >
                   About
                 </a>
@@ -48,7 +48,7 @@ export default function Header() {
               <li className="">
                 <a
                   href="https://sriyog.com/team"
-                  className="block py-2 px-3 text-gray-500 rounded hover:text-[#8B1414] md:hover:bg-transparent md:border-0 md: md:p-0"
+                  className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent md:p-0 lg:text-[14px] md:text-[13px] max-[1136px]:text-[10px]"
                 >
                   Team
                 </a>
@@ -56,7 +56,7 @@ export default function Header() {
               <li className="">
                 <a
                   href="https://sriyog.com/faq"
-                  className="block py-2 px-3 text-gray-500 rounded hover:text-[#8B1414] md:hover:bg-transparent md:border-0 md: md:p-0"
+                  className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent md:p-0 lg:text-[14px] md:text-[13px] max-[1136px]:text-[10px]"
                 >
                   FAQ
                 </a>
@@ -64,7 +64,7 @@ export default function Header() {
               <li className="">
                 <a
                   href="https://sriyog.com/contact"
-                  className="block py-2 px-3 text-gray-500 rounded hover:text-[#8B1414] md:hover:bg-transparent md:border-0 md: md:p-0"
+                  className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent md:p-0 lg:text-[14px] md:text-[13px] max-[1136px]:text-[10px]"
                 >
                   Contact
                 </a>
@@ -137,7 +137,10 @@ export default function Header() {
       {/* Toggle menu visibility with state */}
       <div
   id="menu"
-  className={"md:hidden px-6 py-0 shadow-md bg-white text-sm font-medium overflow-hidden transition-all duration-300 ease-in-out opacity-0 max-h-0"}
+  aria-hidden={!menuOpen}
+  className={`md:hidden px-6 py-0 shadow-md bg-white text-sm font-medium overflow-hidden transition-all duration-300 ease-in-out ${
+    menuOpen ? 'opacity-100 max-h-screen py-4' : 'opacity-0 max-h-0'
+  }`}
 >
         <div className="container mx-auto">
           <a href="https://sriyog.com/" className="block  py-2">

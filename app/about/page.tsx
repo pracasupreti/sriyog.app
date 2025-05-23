@@ -1,9 +1,15 @@
-import React from 'react'
+"use client"
+import React from "react";
+import Container from "@/components/Container";
+import AboutCards from "@/components/AboutCards";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <>
+    <Container/>
+    {/* <AboutCards/> */}
+    </>
+  );
+};
 
-export default page
+export default page;

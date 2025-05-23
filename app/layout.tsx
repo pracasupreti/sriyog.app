@@ -50,9 +50,9 @@ export default function RootLayout({
     <Header />
 
     {/* Main content with consistent horizontal padding */}
-    <main className="flex-grow min-h-0 overflow-auto px-6 md:px-12">
+    {/* <main className="flex-grow min-h-0 overflow-auto px-6 md:px-12"> */}
       {children}
-    </main>
+    {/* </main> */}
 
     {/* For footer and footer bottom, also apply horizontal padding to content only */}
       <Footer />

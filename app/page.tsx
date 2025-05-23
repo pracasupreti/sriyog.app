@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
 
         {/* Right Image */}
         <div className="mobile-image w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
-          <img src="/images/mobile.png" alt="Mobile App Preview" className="h-80 md:h-96 w-auto" />
+          <Image src="/images/mobile.png" alt="Mobile App Preview" width={320}
+        height={384} className="h-80 md:h-96 w-auto" />
         </div>
       </div>
     </>

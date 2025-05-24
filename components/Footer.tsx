@@ -1,59 +1,96 @@
-export default function Footer(){
-    return(
-        <>
-         <footer className="footer bg-white border-md shadow-t py-4 px-3 md:px-15">
-        <div className="max-w-screen-xl ">
-            <div
-                className="flex flex-col md:flex-row md:items-center md:justify-between w-full px-4 md:px-10">
-                <div
-                    className="text-xs md:text-base text-center md:text-left">
-                    <p className="text-[11px] sm:text-xs md:text-sm text-black text-center md:text-left leading-snug sm:leading-normal flex flex-wrap justify-center md:justify-start items-center gap-x-1">All Rights Reserved. &copy; <span>2025</span> SRIYOG
-                        Consulting Pvt. Ltd. <span className="bar">| </span><span className="power"> Powered By Microsoft For Startups</span> </p>
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
-                    {/* <script>
-                        document.getElementById("currentYear").innerText = new Date().getFullYear();
-                    </script> */}
-                </div>
-              {/* <div className="flex space-x-2  md:flex md:ml-auto">
-                  
-                    <img src="images/google.png" alt=""className="h-9">
-                    <img src="images/apple.png" alt="" className="h-9">
-                </div> */}
-                <div className="footer-icon flex justify-center md:justify-end space-x-6 mt-2 md:mt-0">
-                   
-                    <a href="https://www.facebook.com/sriyogdotcom" target="_blank"> <svg 
-                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36"
-                            viewBox="0 0 30 30">
-                            <path
-                                d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z">
-                            </path>
-                        </svg></a>
+const Footer = () => {
+  return (
+    <footer className="bg-white border-t border-gray-200">
+      <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-10">
+        <div className="flex flex-wrap justify-between gap-y-8">
+          {/* Column 1 */}
+          <div className="w-1/2 md:w-1/3 lg:w-1/6 flex flex-col space-y-2">
+            <Link href="/about">About Us</Link>
+            <Link href="/how">How It Works</Link>
+            <Link href="/team">Team</Link>
+            <Link href="/press" rel="noopener noreferrer">Press</Link>
+            <Link href="/career" className="inline-flex items-center">
+              Career <span className="text-red-500 ml-1">We're Hiring</span>
+            </Link>
+          </div>
 
-            
-                    <a href="https://twitter.com/thesriyog" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" 
-                            x="0px" y="0px" width="36" height="36" viewBox="0 0 50 50">
-                            <path
-                                d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z">
-                            </path>
-                        </svg></a>
-                    <a href="https://www.linkedin.com/company/sriyog-consulting/" target="_blank"><svg 
-                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36"
-                            viewBox="0 0 50 50">
-                            <path
-                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
-                            </path>
-                        </svg></a>   
-                    <a href="https://www.youtube.com/@sriyogdotcom8535" target="_blank"><svg 
-                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36"
-                            viewBox="0 0 30 30">
-                            <path
-                                d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z">
-                            </path>
-                        </svg></a>
-                </div>
+          {/* Column 2 */}
+          <div className="w-1/2 md:w-1/3 lg:w-1/6 flex flex-col space-y-2">
+            <Link href="/vmgo">Mission / Vision</Link>
+            <Link href="/video">Video</Link>
+            <Link href="/faq">FAQ/ KnowBase</Link>
+            <Link href="/welcome">Welcome</Link>
+            <Link href="/media">Media Coverage</Link>
+          </div>
+
+          {/* Column 3 */}
+          <div className="w-1/2 md:w-1/3 lg:w-1/6 flex flex-col space-y-2">
+            <Link href="/feedback">Feedback</Link>
+            <Link href="/timeline">Timeline</Link>
+            <Link href="/features">Feature</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/city">Cities</Link>
+          </div>
+
+          {/* Column 4 */}
+          <div className="w-1/2 md:w-1/3 lg:w-1/6 flex flex-col space-y-2">
+            <Link href="https://sriyog.com/join" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/navbar/join-now.png" alt="Join Now" width={64} height={23} />
+            </Link>
+            <Link href="https://mail.yandex.com" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/navbar/pracas-maily.png" alt="Access Email" width={45} height={24} />
+            </Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/tos">Terms of Services</Link>
+            <Link href="/sitemap.xml">Sitemap</Link>
+          </div>
+
+          {/* Contact Info */}
+          <div className="w-full md:w-2/3 lg:w-1/4 bg-white shadow-md p-4">
+            <div className="flex flex-col">
+              <Image src="/images/footer/logo.svg" alt="Footer Logo" width={150} height={50} className="mb-4" />
+
+              <ul className="text-sm space-y-2">
+                <li>
+                  <i className="fas fa-map-marker-alt"></i> Rem.Work, Kamalpokhari, Kathmandu, Nepal
+                </li>
+                <li>
+                  <i className="fas fa-phone-alt"></i> +977-9852025735
+                  <br />
+                  <span className="text-red-600 text-xs">Calling Time : 10 AM to 5 PM NPT</span>
+                </li>
+                <li>
+                  <Link href="mailto:info@sriyog.com">
+                    <i className="fas fa-envelope-open"></i> info@sriyog.com
+                  </Link>
+                </li>
+                <li className="flex space-x-2 items-center">
+                  <Image src="/images/footer/telegram.svg" alt="Telegram" width={20} height={20} />
+                  <Image src="/images/footer/viber.svg" alt="Viber" width={20} height={20} />
+                  <Image src="/images/footer/whatsapp.svg" alt="WhatsApp" width={20} height={20} />
+                  <span>+977-9852024365</span>
+                </li>
+              </ul>
+
+              <div className="flex items-center mt-4">
+                <Image src="/images/footer/missed-call.svg" alt="Missed Call" width={25} height={25} />
+                <Link href="tel:+9779852024365" className="ml-2 font-bold text-gray-800 text-lg">
+                  +977-98520<span className="text-xl">24-365</span>
+                </Link>
+              </div>
             </div>
+          </div>
         </div>
+
+        
+      </div>
+
     </footer>
-        </>
-    )
+  )
 }
+
+export default Footer

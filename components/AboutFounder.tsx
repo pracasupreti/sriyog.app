@@ -69,7 +69,7 @@ export default function AboutFounder() {
           {/* Right Column: Image */}
           <div className="w-full lg:w-5/12">
             <img
-              src="/images/about/pracas_large.png"
+              src="/images/logo_image.jpg"
               alt="Pracas Upreti"
               className="w-full h-auto rounded-lg shadow"
             />

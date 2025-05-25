@@ -36,7 +36,7 @@ export default function Header() {
           <li key={item.href}>
             <Link
               href={item.href}
-              className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent lg:text-[13px] md:p-0 md:text-[13px] max-[1136px]:text-[10px]"
+              className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent lg:text-[14px] md:p-0 md:text-[13px] max-[1136px]:text-[10px]"
             >
               {item.label}
             </Link>
@@ -44,12 +44,12 @@ export default function Header() {
         ))}
             </ul>
             <div className="flex items-center space-x-2 md:space-x-2 mr-2 sm:mr-4 md:mr-6 lg:mr-10">
-              <a href="https://sriyog.com/join">
+              <Link href="https://sriyog.com/join">
                 <img src="/images/join-now.png" className="join-now_img h-8" alt="Join Now" />
-              </a>
-              <a href="https://mail.sriyog.com" target="_blank" rel="noopener noreferrer">
+              </Link>
+              <Link href="https://mail.sriyog.com" target="_blank" rel="noopener noreferrer">
                 <img src="/images/mail.svg" className="mail_img h-8 ml-3" alt="Mail" />
-              </a>
+              </Link>
             </div>
           </div>
 

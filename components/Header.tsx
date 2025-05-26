@@ -31,12 +31,12 @@ export default function Header() {
           </a>
 
           <div className="hidden md:flex md:w-auto items-center gap-6" id="navbar-default">
-            <ul className="font-semibold text-xs sm:text-xs md:text-[11px] lg:text-base flex flex-wrap p-4 md:p-0 mt-4 mr-2 md:flex-row md:space-x-3 lg:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white max-w-full">
+            <ul className="font-semibold text-xs sm:text-xs md:text-[11px] lg:text-base flex flex-wrap p-4 md:p-0 mt-4 lg:ml-16 md:flex-row md:space-x-2 lg:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white max-w-full">
               {navItems.map(item => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent lg:text-[14px] md:p-0 md:text-[13px] max-[1136px]:text-[10px]"
+              className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent lg:text-[13px] md:p-0 md:text-[13px] max-[1136px]:text-[10px]"
             >
               {item.label}
             </Link>

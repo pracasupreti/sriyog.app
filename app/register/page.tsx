@@ -1,8 +1,11 @@
+import AirtableEmbed from '@/components/Feedback'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <AirtableEmbed/>
+    </div>
   )
 }
 

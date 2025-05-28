@@ -39,10 +39,10 @@ const Footer = () => {
           {/* Column 4 */}
           <div className="w-1/2 md:w-1/3 lg:w-1/6 flex flex-col space-y-2">
             <Link href="https://sriyog.com/join" target="_blank" rel="noopener noreferrer">
-              <Image src="/images/navbar/join-now.png" alt="Join Now" width={64} height={23} />
+              <Image src="/images/join-now.png" alt="Join Now" width={64} height={23} />
             </Link>
             <Link href="https://mail.yandex.com" target="_blank" rel="noopener noreferrer">
-              <Image src="/images/navbar/pracas-maily.png" alt="Access Email" width={45} height={24} />
+              <Image src="/images/mail.svg" alt="Access Email" width={45} height={24} />
             </Link>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/tos">Terms of Services</Link>
@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="w-full md:w-2/3 lg:w-1/4 bg-white shadow-md p-4">
             <div className="flex flex-col">
-              <Image src="/images/footer/logo.svg" alt="Footer Logo" width={150} height={50} className="mb-4" />
+              <Image src="/images/logo.svg" alt="Footer Logo" width={250} height={150} className="mb-4" />
 
               <ul className="text-sm space-y-2">
                 <li>

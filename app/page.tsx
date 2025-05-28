@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className="w-full max-w-screen-xl mx-auto my-6 md:my-10 px-3 sm:px-6 md:px-8 lg:px-60 flex flex-col-reverse md:flex-row justify-between items-center">
+      <div className="w-full max-w-screen-xl mx-auto my-6 md:my-10 px-3 sm:px-6 md:px-8 lg:px-48 flex flex-col-reverse md:flex-row justify-between items-center">
         
         {/* Left Content */}
         <div className="flex flex-col items-center md:items-start space-y-6 w-full md:w-1/2">
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         {/* Right Image */}
-        <div className="mobile-image w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
+        <div className="mobile-image w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 md:mr-16 lg:mr-0">
           <Image src="/images/mobile.png" alt="Mobile App Preview" width={320}
         height={384} className="h-80 md:h-96 w-auto" />
         </div>

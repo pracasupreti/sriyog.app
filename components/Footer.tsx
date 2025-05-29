@@ -54,7 +54,7 @@ const Footer = () => {
             <div>
               <ul className="space-y-2">
                 <li>
-                  <Link href="https://sriyog.com/join" target="_blank">
+                  <Link href="/join" target="_blank">
                     <Image src="/images/join-now.png" alt="Join Now" width={64} height={23} />
                   </Link>
                 </li>

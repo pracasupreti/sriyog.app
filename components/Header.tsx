@@ -95,7 +95,7 @@ export default function Header() {
           menuOpen ? "opacity-100 max-h-screen py-4" : "opacity-0 max-h-0"
         }`}
       >
-        <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36">
+        <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 text-black">
           <Link href="/" className="block py-2">
             Home
           </Link>

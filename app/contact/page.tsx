@@ -9,9 +9,10 @@ const Page: React.FC = () => {
   return (
     <div>
       <RedSection title="Contact" />
-
+      
       <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-8 flex flex-col md:flex-row gap-8">
         {/* Left Column */}
+        
         <div className="md:w-1/2 space-y-6">
           <div>
             <h2 className="text-2xl font-semibold">Welcome to SRIYOG Support</h2>

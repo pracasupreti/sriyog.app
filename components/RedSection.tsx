@@ -2,7 +2,7 @@ import React from 'react';
 
 interface RedSectionProps {
   title: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const RedSection: React.FC<RedSectionProps> = ({ title, children }) => {

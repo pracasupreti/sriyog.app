@@ -13,7 +13,7 @@ export default function FooterBottom() {
           </p>
 
           {/* Social Icons */}
-          <div className="flex justify-center md:justify-end space-x-6 mt-2 md:mt-0">
+          <div className="flex justify-center md:justify-end space-x-6 mt-2 md:mt-0 text-black">
             {/* Facebook */}
             <a href="https://www.facebook.com/sriyogdotcom" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="currentColor">

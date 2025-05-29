@@ -4,22 +4,6 @@ import React from "react";
 const Container = () => {
   return (
     <>
-      <section className="w-full border-b bg-[#8B1414]">
-        {/* This aligns text with Header */}
-        <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-6">
-          <div className="w-full md:w-8/12 lg:w-10/12 my-auto">
-            <h1 className="text-xl sm:text-2xl lg:text-3xl text-white font-semibold mb-4">
-              About SRIYOG
-            </h1>
-            <p className="text-xs sm:text-sm lg:text-base text-white text-justify leading-relaxed">
-              SRIYOG has been functioning under a start-up model, and is the most
-              recent example of leveraging digital technology to address social
-              problems like unemployment through digital connectivity.
-            </p>
-          </div>
-        </div>
-      </section>
-
     <section className="w-full border-b bg-white">
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-6">
             <div className="flex flex-col lg:flex-row gap-10">
@@ -73,7 +57,9 @@ const Container = () => {
             <div className="w-full lg:w-5/12">
                 <div className="bg-gray-100 p-4 rounded shadow-md">
                 <div className="aspect-video bg-gray-300 flex items-center justify-center">
-                    <span className="text-gray-600 text-center">Image Placeholder</span>
+                    <span className="text-gray-600 text-center">
+                      <img src="/images/mayor.jpg" alt="mayor" />
+                    </span>
                 </div>
                 <p className="mt-4 text-sm text-justify text-gray-800">
                     Mr. Nagesh Koirala (Mayor of Biratnagar Metropolitan) expressing his views at “Karmashil Award” program

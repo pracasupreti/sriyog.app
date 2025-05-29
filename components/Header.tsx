@@ -15,9 +15,9 @@ export default function Header() {
   return (
     <>
       <nav className="bg-white border-gray-200 shadow-md">
-        <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-4 flex items-center justify-between">
-          <a
-            href="https://sriyog.com/"
+        <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-4 flex items-center justify-between flex-nowrap overflow-hidden gap-2">
+          <Link
+            href="/"
             className="flex items-center space-x-1 rtl:space-x-reverse"
           >
             <img
@@ -28,10 +28,10 @@ export default function Header() {
             <span className="ime-pay self-center text-xs sm:text-sm md:text-base font-medium whitespace-nowrap text-black">
               | IME Pay
             </span>
-          </a>
+          </Link>
 
           <div className="hidden md:flex md:w-auto items-center gap-6" id="navbar-default">
-            <ul className="font-semibold text-xs sm:text-xs md:text-[11px] lg:text-base flex flex-wrap p-4 md:p-0 mt-4 lg:ml-16 md:flex-row md:space-x-2 lg:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white max-w-full">
+            <ul className="min-w-0 font-semibold text-[11px] sm:text-xs md:text-[11px] lg:text-sm flex flex-nowrap p-4 md:p-0 mt-4 lg:ml-12 md:flex-row md:space-x-2 lg:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white max-w-full">
               {navItems.map(item => (
           <li key={item.href}>
             <Link
@@ -43,11 +43,11 @@ export default function Header() {
           </li>
         ))}
             </ul>
-            <div className="flex items-center space-x-2 md:space-x-2 mr-2 sm:mr-4 md:mr-6 lg:mr-10">
-              <Link href="https://sriyog.com/join">
+            <div className="flex items-center space-x-2 md:space-x-2 mr-2 sm:mr-4 md:mr-6 lg:mr-10 max-[1103px]:mr-4 max-[1103px]:ml-4" >
+              <Link href="/join">
                 <img src="/images/join-now.png" className="join-now_img h-8" alt="Join Now" />
               </Link>
-              <Link href="https://mail.sriyog.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://mail.yandex.com" target="_blank" rel="noopener noreferrer">
                 <img src="/images/mail.svg" className="mail_img h-8 ml-3" alt="Mail" />
               </Link>
             </div>
@@ -108,12 +108,12 @@ export default function Header() {
           <a href="https://sriyog.com/contact" className="block py-2">
             Contact
           </a>
-          <a href="https://sriyog.com/join">
+          <Link href="/join">
             <img src="/images/join-now.png" className="h-8 mb-2" alt="Join Now" />
-          </a>
-          <a href="https://mail.sriyog.com">
+          </Link>
+          <Link href="/mail">
             <img src="/images/mail.svg" className="h-8" alt="Mail" />
-          </a>
+          </Link>
         </div>
       </div>
     </>

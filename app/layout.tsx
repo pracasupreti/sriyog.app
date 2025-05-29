@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FooterBottom from "@/components/FooterBottom";
+import ClientFooter from "@/components/ClientFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,12 +52,13 @@ export default function RootLayout({
 
     {/* Main content with consistent horizontal padding */}
     {/* <main className="flex-grow min-h-0 overflow-auto px-6 md:px-12"> */}
+    <main className="flex-1">
       {children}
+    </main>
     {/* </main> */}
 
     {/* For footer and footer bottom, also apply horizontal padding to content only */}
-      <Footer />
-      <FooterBottom />
+      <ClientFooter/>
   </div>
 </body>
     </html>

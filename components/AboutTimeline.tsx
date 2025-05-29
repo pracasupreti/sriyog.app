@@ -24,32 +24,32 @@ export default function AboutTimeline() {
             <div className="flex gap-6 min-w-max">
               {[
                 {
-                  img: "/images/about/company-registration.jpg",
+                  img: "/images/photoscroll1.jpg",
                   text: "Company Registration",
                   date: "14th June, 2018",
                 },
                 {
-                  img: "/images/about/12-sep-2019.jpg",
+                  img: "/images/photoscroll2.jpg",
                   text: "Inaugurated at Kathmandu",
                   date: "12th September, 2019",
                 },
                 {
-                  img: "/images/about/maw.jpg",
+                  img: "/images/photoscroll3.jpg",
                   text: "MoU With MAW Skills",
                   date: "31st December, 2019",
                 },
                 {
-                  img: "/images/about/karmashil-award.jpg",
+                  img: "/images/photoscroll4.jpg",
                   text: "Karmashil Award Ceremony",
                   date: "12th September, 2022",
                 },
                 {
-                  img: "/images/about/ime-pay-mou.jpg",
+                  img: "/images/photoscroll5.jpg",
                   text: "MoU with IME Pay",
                   date: "8th February, 2023",
                 },
                 {
-                  img: "/images/about/sriyog-may-app.jpg",
+                  img: "/images/photoscroll6.jpg",
                   text: "New App Launched",
                   date: "17th May, 2024",
                 },

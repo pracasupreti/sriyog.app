@@ -8,11 +8,11 @@ export default function Home() {
         
         {/* Left Content */}
         <div className="flex flex-col items-center md:items-start space-y-6 w-full md:w-1/2">
-          <h1 className="text-2xl md:text-3xl text-center md:text-left mt-4">
+          <h1 className="text-2xl md:text-3xl text-center md:text-left mt-4 text-black">
             Find Skilled Professionals
           </h1>
-          <p className="text-xl text-center md:text-left">100K+ Downloads</p>
-          <p className="font-semibold text-center md:text-left">Now India Added</p>
+          <p className="text-xl text-center md:text-left text-black">100K+ Downloads</p>
+          <p className="font-semibold text-center md:text-left text-black">Now India Added</p>
           <div className="flex space-x-3 md:space-x-4 justify-center md:justify-start">
             <a href="https://bit.ly/sriyog" target="_blank" rel="noreferrer">
               <img src="images/google.png" alt="Google Play Store" className="h-8 md:h-12 w-auto" />

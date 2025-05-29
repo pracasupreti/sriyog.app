@@ -10,22 +10,22 @@ export default function AboutFounder() {
           {/* Left Column: Text Content */}
           <div className="w-full lg:w-7/12">
             <hr className="border-t-2 border-[#8b1414] w-20 mb-4" />
-            <h1 className="text-2xl sm:text-3xl font-semibold text-[#8b1414] mb-6">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-[#8b1414] mb-6 text-black">
               The Man Behind SRIYOG
             </h1>
 
-            <p className="mb-4 text-justify">
+            <p className="mb-4 text-justify text-black">
               Pracas Upreti's journey from a startup founder to a technology-driven change-maker in Biratnagar, Nepal,
               exemplifies the profound impact that individuals can have when they combine innovation with a commitment to
               social responsibility.
             </p>
 
-            <p className="mb-4 text-justify">
+            <p className="mb-4 text-justify text-black">
               Through his endeavors, Upreti has not only transformed his community but has also set a precedent for how
               technology can be harnessed to drive positive change and create a better future for all.
             </p>
 
-            <p className="mb-4 text-justify">
+            <p className="mb-4 text-justify text-black">
               Upreti's journey into the realm of technology began over a decade ago when he founded his first IT startup
               in 2007 A.D. as PRACAS Infosys in Biratnagar. Recognizing the potential of technology to bridge gaps and
               catalyze progress, he embarked on a mission to leverage digital solutions to address local challenges and
@@ -35,7 +35,7 @@ export default function AboutFounder() {
 
             <img src="/images/prakash_sig.png" alt="Signature" className="mt-6 w-40" />
 
-            <p className="font-semibold mt-2">PRACAS Upreti</p>
+            <p className="font-semibold mt-2 text-black">PRACAS Upreti</p>
 
             {/* Social Icons */}
             <div className="flex gap-4 mt-4">

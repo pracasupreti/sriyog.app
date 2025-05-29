@@ -7,12 +7,12 @@ export default function AboutTimeline() {
           <div className="lg:w-1/3 shrink-0">
             <div className="bg-white rounded-lg shadow p-6 sticky top-10">
               <h2 className="text-[#8B1414] text-2xl font-semibold mb-4">A Brief History of SRIYOG</h2>
-              <p className="mb-4">
+              <p className="mb-4 text-black">
                 Analyzing the global trend of migration, we can find the only reason for skyrocketing foreign employment
                 is that people choose the easy way of grabbing the readymade market rather than creating something new by
                 themselves.
               </p>
-              <p>
+              <p className="text-black">
                 This hampers the distribution of the skilled manpower in the underdeveloped countries and brings imbalance
                 over the global community. Analyzing the Global Service market, we found unbelievable facts.
               </p>
@@ -20,7 +20,7 @@ export default function AboutTimeline() {
           </div>
 
           {/* Right Column: Horizontal Scrollable Timeline */}
-          <div className="lg:w-2/3 overflow-x-auto">
+          <div className="lg:w-2/3 overflow-x-auto text-black">
             <div className="flex gap-6 min-w-max">
               {[
                 {

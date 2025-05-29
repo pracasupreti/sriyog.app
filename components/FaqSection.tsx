@@ -55,9 +55,9 @@ To do this on a computer or laptop, using Chrome, Firefox, Opera, Edge, Brave or
 ]
 
 export default function FaqSection() {
-  const [activeIndex, setActiveIndex] = useState(null)
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: number) => {
     setActiveIndex(index === activeIndex ? null : index)
   }
 

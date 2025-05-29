@@ -33,7 +33,7 @@ export default function AboutFounder() {
               meaningful change in his community.
             </p>
 
-            <img src="/images/about/prakash_sig.png" alt="Signature" className="mt-6 w-40" />
+            <img src="/images/prakash_sig.png" alt="Signature" className="mt-6 w-40" />
 
             <p className="font-semibold mt-2">PRACAS Upreti</p>
 
@@ -45,7 +45,7 @@ export default function AboutFounder() {
                 rel="noopener noreferrer"
                 title="Telegram"
               >
-                <img src="/images/about/social-icons/telegram.svg" alt="Telegram" width="24" height="24" />
+                <img src="/images/telegram.svg" alt="Telegram" width="24" height="24" />
               </a>
               <a
                 href="https://x.com/pracas"
@@ -53,7 +53,7 @@ export default function AboutFounder() {
                 rel="noopener noreferrer"
                 title="Twitter/X"
               >
-                <img src="/images/about/social-icons/x.svg" alt="Twitter" width="24" height="24" />
+                <img src="/images/x.svg" alt="Twitter" width="24" height="24" />
               </a>
               <a
                 href="https://linkedin.com/in/pracasupreti"
@@ -61,7 +61,7 @@ export default function AboutFounder() {
                 rel="noopener noreferrer"
                 title="LinkedIn"
               >
-                <img src="/images/about/social-icons/linkedin.svg" alt="LinkedIn" width="24" height="24" />
+                <img src="/images/linkedin.svg" alt="LinkedIn" width="24" height="24" />
               </a>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function AboutFounder() {
           {/* Right Column: Image */}
           <div className="w-full lg:w-5/12">
             <img
-              src="/images/logo_image.jpg"
+              src="/images/pracas_large.png"
               alt="Pracas Upreti"
               className="w-full h-auto rounded-lg shadow"
             />

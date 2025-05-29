@@ -28,10 +28,9 @@ const faqData = [
   },
   {
     question: 'How to register details in SRIYOG?',
-    answer:
-      `One has to download the app from the mobile phone and register the details by spending SRIYOG on Google Play Store.
+    answer: `One has to download the app from the mobile phone and register the details by spending SRIYOG on Google Play Store.
 
-      To do this on a computer or laptop, using Chrome, Firefox, Opera, Edge, Brave or any other web browser, go to www.sriyog.com website and click on the join button on the top right side or go to www.sriyog.com/join and fill in the details.`,
+To do this on a computer or laptop, using Chrome, Firefox, Opera, Edge, Brave or any other web browser, go to www.sriyog.com website and click on the join button on the top right side or go to www.sriyog.com/join and fill in the details.`,
   },
   {
     question: 'How to get a membership in SRIYOG?',
@@ -56,26 +55,28 @@ const faqData = [
 ]
 
 export default function FaqSection() {
-  const [activeIndex, setActiveIndex] = useState(null)
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: number) => {
     setActiveIndex(index === activeIndex ? null : index)
   }
 
   return (
-    <section className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-8">
-      <div className="space-y-4">
+    <section className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-10">
+      <div className="border border-gray-200 rounded-md divide-y divide-gray-200 bg-white">
         {faqData.map((item, index) => (
-          <div key={index} className="border rounded-lg shadow">
+          <div key={index}>
             <button
-              className="w-full flex justify-between items-center p-4 text-left font-semibold text-gray-800 hover:bg-gray-100 focus:outline-none"
+              className="w-full text-left px-6 py-4 flex justify-between items-center font-semibold text-gray-800 hover:bg-gray-50 transition"
               onClick={() => toggleAccordion(index)}
             >
-              {item.question}
-              <span>{activeIndex === index ? '-' : '+'}</span>
+              <span className='cursor-pointer hover:text-[#8b1414]'>{item.question}</span>
+              <span className="text-xl font-bold cursor-pointer">
+                {activeIndex === index ? '−' : '+'}
+              </span>
             </button>
             {activeIndex === index && (
-              <div className="p-4 border-t bg-gray-50 text-gray-700 whitespace-pre-line">
+              <div className="px-6 pb-4 text-gray-700 whitespace-pre-line">
                 {item.answer}
               </div>
             )}

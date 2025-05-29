@@ -7,6 +7,7 @@ import { MdEmail, MdSend } from 'react-icons/md';
 
 const Page: React.FC = () => {
   return (
+
     <div>
       <RedSection title="Contact" />
       
@@ -162,5 +163,7 @@ const Page: React.FC = () => {
     </div>
   );
 };
+
+
 
 export default Page;

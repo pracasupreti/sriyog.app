@@ -56,7 +56,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               id="hamburger"
-              className="text-gray-900 focus:outline-none"
+              className="text-gray-900 focus:outline-none cursor-pointer"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
               aria-expanded={menuOpen}
@@ -96,18 +96,21 @@ export default function Header() {
         }`}
       >
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36">
-          <a href="https://sriyog.com/" className="block py-2">
+          <Link href="/" className="block py-2">
             Home
-          </a>
-          <a href="https://sriyog.com/about" className="block py-2">
+          </Link>
+          <Link href="/about" className="block py-2">
             About
-          </a>
-          <a href="https://sriyog.com/services" className="block py-2">
-            Services
-          </a>
-          <a href="https://sriyog.com/contact" className="block py-2">
+          </Link>
+          <Link href="/team" className="block py-2">
+            Team
+          </Link>
+          <Link href="/faq" className="block py-2">
+            FAQ
+          </Link>
+          <Link href="/contact" className="block py-2">
             Contact
-          </a>
+          </Link>
           <Link href="/join">
             <img src="/images/join-now.png" className="h-8 mb-2" alt="Join Now" />
           </Link>

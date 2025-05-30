@@ -75,7 +75,7 @@ export default function VideosSection() {
       </section>
 
       {/* Video Grid */}
-      <section className="max-w-screen-xl mx-auto px-4 py-12">
+      <section className="max-w-screen-xl mx-auto px-4 py-12 text-black">
         <h2 className="text-2xl font-bold mb-8">SRIYOG Videos</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           {videos.map((video, index) => (

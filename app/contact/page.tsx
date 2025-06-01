@@ -1,9 +1,13 @@
-'use client';
-
 import React from 'react';
 import RedSection from '@/components/RedSection';
 import { FaRegEdit, FaUserShield, FaBullhorn, FaIdBadge } from 'react-icons/fa';
 import { MdEmail, MdSend } from 'react-icons/md';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 const Page: React.FC = () => {
   return (

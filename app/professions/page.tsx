@@ -1,7 +1,11 @@
-"use client";
-
 import Image from "next/image";
 import RedSection from "@/components/RedSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Professions | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 const professions = [
   { img: "electrician.png", title: "Electrician" },
@@ -31,7 +35,7 @@ const professions = [
 export default function FeaturesSection() {
   return (
     <>
-        <RedSection title="Sriyog Professionals" />
+        <RedSection title="SRIYOG Professions" />
       <section className="w-full bg-white text-black pt-10">
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-black">

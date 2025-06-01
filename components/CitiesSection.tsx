@@ -28,17 +28,18 @@ const CitiesSection = () => {
               <Image
                 src={`/images/${city.img}`}
                 alt={`${city.name} City`}
-                width={400}
-                height={300}
+                width={200}
+                height={100}
+                priority
                 className="rounded w-full h-auto object-cover"
               />
-              {/* <Image
+              <Image
                 src="/images/city-mask.png"
                 alt="Mask"
                 width={400}
                 height={300}
                 className="absolute inset-0 w-full h-full object-cover"
-              /> */}
+              />
               <p className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold z-10">
                 <Link href="#" className="hover:underline">
                   {city.name}

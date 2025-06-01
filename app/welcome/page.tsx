@@ -1,6 +1,10 @@
-'use client';
-
 import Image from 'next/image';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Welcome | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 export default function WelcomeNote() {
   return (

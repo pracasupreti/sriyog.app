@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function MembershipSection() {
   return (
     <section className="w-full bg-gray-100 pt-10 pb-10" aria-labelledby="membership-heading">
-      <div className="max-w-screen-xl mx-auto bg-white rounded shadow p-6 md:p-10">
+      <div className="max-w-screen-xl mx-auto bg-white rounded shadow px-3 sm:px-6 md:px-8 lg:px-36">
         <article className="p-3">
           <header>
             <h2 id="membership-heading" className="text-center text-2xl sm:text-3xl font-semibold mb-6 text-black">
@@ -56,7 +56,7 @@ export default function MembershipSection() {
             </p>
 
             <figure className="flex justify-center">
-              <Image src="/images/press/2.png" alt="Verified Professional Banner" width={800} height={400} className="rounded" />
+              <Image src="/images/press/2.png" alt="Verified Professional Banner" width={600} height={300} className="rounded" />
             </figure>
 
             <p>
@@ -111,13 +111,13 @@ export default function MembershipSection() {
 
             <footer className="space-y-2">
               <p>📲 <strong>App Download:</strong>{" "}
-                <Link href="https://bit.ly/sriyog" target="_blank" className="text-blue-600 underline" rel="noopener noreferrer">
+                <Link href="https://www.sriyog.app" target="_blank" className="text-black no-underline hover:text-[#8b1414]" rel="noopener noreferrer">
                   Click here
                 </Link>
               </p>
               <p>🌐 <strong>Website:</strong>{" "}
-                <Link href="https://www.sriyog.com" target="_blank" className="text-blue-600 underline" rel="noopener noreferrer">
-                  www.sriyog.com
+                <Link href="https://www.sriyog.app" target="_blank" className="text-black no-underline hover:text-[#8b1414]" rel="noopener noreferrer">
+                  sriyog.app
                 </Link>
               </p>
               <div className="flex gap-4 mt-2" aria-label="Download Documents">

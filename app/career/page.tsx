@@ -1,4 +1,10 @@
 import React from 'react';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Career | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 const Page: React.FC = () => {
   return (

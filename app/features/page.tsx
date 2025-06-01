@@ -1,5 +1,6 @@
 "use client";
 
+import RedSection from "@/components/RedSection";
 import Image from "next/image";
 
 const features = [
@@ -53,6 +54,7 @@ const features = [
 const FeaturesSection = () => {
   return (
     <>
+        <RedSection title="Features"/>
       <section className="w-full bg-white text-black">
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 pt-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">

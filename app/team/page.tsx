@@ -1,6 +1,12 @@
 import RedSection from '@/components/RedSection';
 import Image from 'next/image';
 import TeamSection from '@/components/TeamSection';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Team | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 const teamMembers = [
   {

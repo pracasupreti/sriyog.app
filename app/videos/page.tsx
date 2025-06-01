@@ -1,6 +1,10 @@
-'use client';
-
 import React from 'react';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Videos | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 const videos = [
   {

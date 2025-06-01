@@ -1,10 +1,15 @@
-"use client"
 import React from "react";
 import Container from "@/components/Container";
 import AboutCards from "@/components/AboutCards";
 import AboutTimeline from "@/components/AboutTimeline";
 import AboutFounder from "@/components/AboutFounder";
 import RedSection from "@/components/RedSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 const page = () => {
   return (
@@ -17,7 +22,7 @@ const page = () => {
     <Container/>
     <AboutCards/>
     <AboutTimeline/>
-    <AboutFounder/>
+    {/* <AboutFounder/> */}
     </>
   );
 };

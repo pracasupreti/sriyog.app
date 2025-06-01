@@ -1,5 +1,9 @@
-"use client";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "TOS | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 export default function TermsAndConditions() {
   return (
     <>

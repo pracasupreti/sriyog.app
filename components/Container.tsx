@@ -55,18 +55,26 @@ const Container = () => {
 
             {/* Right Image Section */}
             <div className="w-full lg:w-5/12">
-                <div className="bg-gray-100 p-4 rounded shadow-md">
-                <div className="aspect-video bg-gray-300 flex items-center justify-center">
-                    <span className="text-gray-600 text-center">
-                      <img src="/images/mayor.jpg" alt="mayor" />
-                    </span>
-                </div>
-                <p className="mt-4 text-sm text-justify text-gray-800">
-                    Mr. Nagesh Koirala (Mayor of Biratnagar Metropolitan) expressing his views at “Karmashil Award” program
-                    held at Morang Byapar Sangh on 12 September 2022.
-                </p>
-                </div>
-            </div>
+  <div className="relative rounded shadow-md overflow-hidden h-[300px] md:h-[400px] bg-gray-100">
+    {/* Background Image */}
+    <img
+      src="/images/mayor.jpg"
+      alt="mayor"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+
+    {/* Text near bottom with faint transparent background */}
+    <p className="absolute bottom-0 left-0 right-0
+      bg-opacity-30 text-center text-sm
+      py-3 z-10 rounded-b-md backdrop-blur-sm text-black">
+      Mr. Nagesh Koirala (Mayor of Biratnagar Metropolitan) expressing his views at
+      “Karmashil Award” program held at Morang Byapar Sangh on 12 September 2022.
+    </p>
+  </div>
+</div>
+
+
+
             </div>
         </div>
     </section>

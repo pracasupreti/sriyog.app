@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className="w-full max-w-screen-xl mx-auto my-6 md:my-10 px-3 sm:px-6 md:px-8 lg:px-48 flex flex-col-reverse md:flex-row justify-between items-center">
+      <div className="w-full max-w-screen-xl mx-auto py-6 md:py-12 md:my-10 px-3 sm:px-6 md:px-8 lg:px-48 flex flex-col-reverse md:flex-row justify-between items-center">
         
         {/* Left Content */}
         <div className="flex flex-col items-center md:items-start space-y-6 w-full md:w-1/2">

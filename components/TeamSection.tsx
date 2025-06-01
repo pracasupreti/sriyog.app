@@ -23,7 +23,7 @@ export default function TeamSection() {
   return (
     <section className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-6">
       {/* About PRACAS */}
-      <div className="bg-gray-100 rounded-lg p-6 mb-10 flex flex-col md:flex-row gap-6 items-center text-black">
+      {/* <div className="bg-gray-100 rounded-lg p-6 mb-10 flex flex-col md:flex-row gap-6 items-center text-black">
         <div className="flex flex-col items-center mb-16">
             <Image
                 src="/images/pracas_large.png"
@@ -53,7 +53,7 @@ export default function TeamSection() {
             <a href="https://linkedin.com/in/pracasupreti" target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={20} /></a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Team Members */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-black">

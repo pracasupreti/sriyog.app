@@ -1,7 +1,11 @@
-'use client';
-
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "VMGO | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 const images = ['/images/1.jpg', '/images/2.jpg'];
 

@@ -4,10 +4,11 @@ export const metadata: Metadata = {
   title: "Timeline | SRIYOG App",
   description: "Learn about SRIYOG, its mission, and impact.",
 };
+
 export default function Timeline() {
   const timelineData = [
     {
-      icon: "fa-credit-card",
+      icon: "fa-map-marker-alt",
       title: "Deployed in Apple iOS Store",
       date: "8th Nov, 2024",
       description:
@@ -16,7 +17,7 @@ export default function Timeline() {
       right: true,
     },
     {
-      icon: "fa-mobile",
+      icon: "fa-arrow-left",
       title: "React Native on Android",
       date: "6th Nov, 2024",
       description:
@@ -33,7 +34,7 @@ export default function Timeline() {
       right: true,
     },
     {
-      icon: "fa-check",
+      icon: "fa-check-circle",
       title: "Verified in Microsoft for Startups",
       date: "6th March, 2024",
       description:
@@ -81,7 +82,7 @@ export default function Timeline() {
       right: true,
     },
     {
-      icon: "fa-bolt",
+      icon: "fa-building",
       title: "Registration",
       date: "14th June, 2018",
       description:
@@ -114,10 +115,9 @@ export default function Timeline() {
             >
               {/* Icon */}
               <div
-                className="z-10 absolute left-1/2 transform -translate-x-1/2 bg-white border-4 w-12 h-12 rounded-full flex items-center justify-center text-xl"
-                style={{ borderColor: "#8b1414", color: "#8b1414" }}
+                className="z-10 absolute left-1/2 transform -translate-x-1/2 bg-[#8b1414] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl shadow-lg"
               >
-                <i className={`fa ${item.icon}`}></i>
+                <i className={`fas ${item.icon}`}></i>
               </div>
 
               {/* Card */}

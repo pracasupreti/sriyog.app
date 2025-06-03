@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl font-semibold">Contact Us</h2>
             <p>
               If you have questions about this policy, contact us at:{" "}
-              <a href="mailto:privacy@sriyog.com" className="text-blue-600 underline">
+              <a href="mailto:privacy@sriyog.com" className="text-black hover:text-[#8b1414]">
                 privacy@sriyog.com
               </a>
             </p>

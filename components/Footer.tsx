@@ -32,7 +32,7 @@ const Footer = () => {
             <div>
               <ul className="space-y-2">
                 <li><Link href="/vmgo">Mission / Vision</Link></li>
-                <li><Link href="/video">Video</Link></li>
+                <li><Link href="/videos">Videos</Link></li>
                 <li><Link href="/faq">FAQ / KnowBase</Link></li>
                 <li><Link href="/welcome">Welcome</Link></li>
                 <li><Link href="/media">Media Coverage</Link></li>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <li><Link href="/feedback">Feedback</Link></li>
                 <li><Link href="/timeline">Timeline</Link></li>
                 <li><Link href="/features">Feature</Link></li>
-                <li><Link href="/services">Services</Link></li>
+                <li><Link href="/professions">Professions</Link></li>
                 <li><Link href="/city">Cities</Link></li>
               </ul>
             </div>

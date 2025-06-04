@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const AboutCards = () => {
   return (
@@ -9,7 +10,7 @@ const AboutCards = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Card 1 */}
             <div className="flex items-start gap-4">
-              <img src="/images/team.svg" alt="team" className="w-12 h-12" />
+              <Image src="/images/team.svg" alt="team" width={48} height={48} />
               <div>
                 <h2 className="text-[#841515] text-lg font-semibold mb-2">Experienced Team</h2>
                 <p className="text-gray-800 text-sm sm:text-base">
@@ -21,7 +22,7 @@ const AboutCards = () => {
 
             {/* Card 2 */}
             <div className="flex items-start gap-4">
-              <img src="/images/building.svg" alt="global reach" className="w-12 h-12" />
+              <Image src="/images/building.svg" alt="global reach" width={48} height={48} />
               <div>
                 <h2 className="text-[#841515] text-lg font-semibold mb-2">Global Reach</h2>
                 <p className="text-gray-800 text-sm sm:text-base">
@@ -34,7 +35,7 @@ const AboutCards = () => {
 
             {/* Card 3 */}
             <div className="flex items-start gap-4">
-              <img src="/images/flag.svg" alt="opportunities" className="w-12 h-12" />
+              <Image src="/images/flag.svg" alt="opportunities" width={48} height={48} />
               <div>
                 <h2 className="text-[#841515] text-lg font-semibold mb-2">Multiple Opportunities</h2>
                 <p className="text-gray-800 text-sm sm:text-base">
@@ -47,7 +48,7 @@ const AboutCards = () => {
 
             {/* Card 4 */}
             <div className="flex items-start gap-4">
-              <img src="/images/skills.svg" alt="ai ml" className="w-12 h-12" />
+              <Image src="/images/skills.svg" alt="ai ml" width={48} height={48} />
               <div>
                 <h2 className="text-[#841515] text-lg font-semibold mb-2">AI and ML Integration</h2>
                 <p className="text-gray-800 text-sm sm:text-base">

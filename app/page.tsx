@@ -15,18 +15,35 @@ export default function Home() {
           <p className="font-semibold text-center md:text-left text-black">Now India Added</p>
           <div className="flex space-x-3 md:space-x-4 justify-center md:justify-start">
             <a href="https://bit.ly/sriyog" target="_blank" rel="noreferrer">
-              <img src="images/google.png" alt="Google Play Store" className="h-8 md:h-12 w-auto" />
+              <Image
+                src="/images/google.png"
+                alt="Google Play Store"
+                width={150}
+                height={50}
+                className="h-8 md:h-12 w-auto"
+              />
             </a>
             <a href="https://bit.ly/sriyogios" target="_blank" rel="noreferrer">
-              <img src="/images/apple.png" alt="Apple App Store" className="h-8 md:h-12 w-auto" />
+              <Image
+                src="/images/apple.png"
+                alt="Apple App Store"
+                width={150}
+                height={50}
+                className="h-8 md:h-12 w-auto"
+              />
             </a>
           </div>
         </div>
 
         {/* Right Image */}
         <div className="mobile-image w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 md:mr-16 lg:mr-0">
-          <Image src="/images/mobile.png" alt="Mobile App Preview" width={320}
-        height={384} className="h-80 md:h-96 w-auto" />
+          <Image
+            src="/images/mobile.png"
+            alt="Mobile App Preview"
+            width={320}
+            height={384}
+            className="h-80 md:h-96 w-auto"
+          />
         </div>
       </div>
     </>

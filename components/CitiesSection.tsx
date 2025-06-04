@@ -4,15 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 const cities = [
-  { name: "Biratnagar", img: "bir.png" },
-  { name: "Kathmandu", img: "kat.png" },
-  { name: "Pokhara", img: "pkr.png" },
-  { name: "Bharatpur", img: "bhar.png" },
-  { name: "Birjung", img: "birj.png" },
-  { name: "Janakpur", img: "jan.png" },
+  { name: "Biratnagar", img: "biratnagar.png" },
+  { name: "Kathmandu", img: "kathmandumain.png" },
+  { name: "Pokhara", img: "pokhara.jpg" },
+  { name: "Bharatpur", img: "bharatpur.png" },
+  { name: "Birgunj", img: "birgunj.jpg" },
+  { name: "Janakpur", img: "janakpur.png" },
   { name: "Dharan", img: "dharan.png" },
-  { name: "Itahari", img: "ita.png" },
-  { name: "Damak", img: "dam.png" },
+  { name: "Itahari", img: "itahari.jpg" },
+  { name: "Damak", img: "damak.jpg" },
 ];
 
 const CitiesSection = () => {
@@ -26,7 +26,7 @@ const CitiesSection = () => {
           {cities.map((city, idx) => (
             <div key={idx} className="relative group">
               <Image
-                src={`/images/${city.img}`}
+                src={`/images/city/${city.img}`}
                 alt={`${city.name} City`}
                 width={200}
                 height={100}

@@ -1,5 +1,6 @@
 "use client"
 import React from "react";
+import Image from "next/image";
 
 const Container = () => {
   return (
@@ -57,10 +58,11 @@ const Container = () => {
             <div className="w-full lg:w-5/12">
   <div className="relative rounded shadow-md overflow-hidden h-[300px] md:h-[400px] bg-gray-100">
     {/* Background Image */}
-    <img
+    <Image
       src="/images/mayor.jpg"
       alt="mayor"
-      className="absolute inset-0 w-full h-full object-cover"
+      fill
+      className="absolute inset-0 w-full h-full object-cover" 
     />
 
     {/* Text near bottom with faint transparent background */}

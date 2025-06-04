@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function AboutTimeline() {
   return (
     <section className="w-full bg-gray-100 py-10 mt-10 mb-10">
@@ -55,7 +56,10 @@ export default function AboutTimeline() {
                 },
               ].map((item, idx) => (
                 <div key={idx} className="min-w-[280px] bg-white rounded-lg shadow p-4 flex-shrink-0">
-                  <img src={item.img} alt={item.text} className="w-full h-40 object-cover rounded mb-3" />
+                  <div className="relative w-full h-40 rounded mb-3 overflow-hidden">
+                    <Image src={item.img} alt={item.text} className="object-cover" fill/>
+
+                  </div>
                   <p className="text-lg font-medium">{item.text}</p>
                   <p className="text-gray-500 mt-2 text-base">
                     {item.date.split(" ")[0]}

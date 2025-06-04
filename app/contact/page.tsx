@@ -1,12 +1,18 @@
-'use client';
-
 import React from 'react';
 import RedSection from '@/components/RedSection';
 import { FaRegEdit, FaUserShield, FaBullhorn, FaIdBadge } from 'react-icons/fa';
 import { MdEmail, MdSend } from 'react-icons/md';
+import type { Metadata } from "next";
+import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Contact | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 
 const Page: React.FC = () => {
   return (
+
     <div>
       <RedSection title="Contact" />
       
@@ -15,7 +21,7 @@ const Page: React.FC = () => {
         
         <div className="md:w-1/2 space-y-6">
           <div>
-            <h2 className="text-2xl font-semibold">Welcome to SRIYOG Support</h2>
+            <h2 className="text-2xl font-semibold text-black">Welcome to SRIYOG Support</h2>
             <p className="text-gray-600">
               Welcome to SRIYOG! We're located at Rem.Work, Kamalpokhari, Kathmandu, Nepal.
             </p>
@@ -31,7 +37,7 @@ const Page: React.FC = () => {
             ></iframe>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 pt-4">
+          <div className="grid grid-cols-2 gap-4 pt-4 text-black">
             {[
               { title: 'Registration', desc: 'Easy Registration system to join as professional.', icon: <FaRegEdit className="text-2xl text-[#8b1414]" /> },
               { title: 'Membership', desc: 'Reasonable verification fee for yearly membership.', icon: <FaIdBadge className="text-2xl text-[#8b1414] " /> },
@@ -50,17 +56,17 @@ const Page: React.FC = () => {
         </div>
 
         {/* Right Column - Contact Form */}
-        <div className="md:w-1/2 bg-gray-100 p-8 rounded-md shadow-sm border border-gray-200">
+        <div className="md:w-1/2 bg-gray-100 p-8 rounded-md shadow-sm border border-gray-200 text-black">
           <h2 className="text-xl font-semibold mb-6 flex items-center gap-2">
             <MdEmail className="text-2xl text-[#8b1414]" />
             Send Your Queries
           </h2>
 
-          <form className="space-y-5">
+          <form className="space-y-5 ">
             {/* First and Last Name */}
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4 ">
               <div className="w-full">
-                <label className="block mb-1 text-sm font-medium text-gray-700">First Name</label>
+                <label className="block mb-1 text-sm font-medium text-gray-700 text-black">First Name</label>
                 <input type="text" placeholder="First Name" className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-red-200 bg-white" />
               </div>
               <div className="w-full">
@@ -124,8 +130,9 @@ const Page: React.FC = () => {
     <div className="flex flex-col lg:flex-row justify-center items-start gap-10">
       
       {/* Person 1 */}
-      <div className="w-full lg:w-1/3 text-center px-4">
-        <img src="/images/niranjan.png" alt="Niranjan Sharma" className="mx-auto rounded-full w-48 h-48 object-cover" />
+      <div className="w-full lg:w-1/3 text-center px-4 text-black">
+        <Image src="/images/niranjan.png" alt="Niranjan Sharma" width={192}
+  height={192} className="mx-auto rounded-full object-cover" />
         <p className="pt-4 font-semibold text-lg">Niranjan Sharma</p>
         <p className="text-gray-600">Project Manager</p>
         <a href="https://t.me/niranjanpm" target="_blank" className="mt-2 inline-block border border-[#8b1414] text-[#8b1414] px-4 py-1 rounded hover:bg-[#8b1414] hover:text-white transition">
@@ -134,8 +141,9 @@ const Page: React.FC = () => {
       </div>
 
       {/* Person 2 */}
-      <div className="w-full lg:w-1/3 text-center px-4">
-        <img src="/images/aashish.png" alt="Aashis Sunar" className="mx-auto rounded-full w-48 h-48 object-cover" />
+      <div className="w-full lg:w-1/3 text-center px-4 text-black">
+        <Image src="/images/aashish.png" alt="Aashis Sunar" width={192}
+  height={192} className="mx-auto rounded-full object-cover" />
         <p className="pt-4 font-semibold text-lg">Aashis Sunar</p>
         <p className="text-gray-600">Business Development Officer</p>
         <a href="https://wa.me/9779852024365" target="_blank" className="mt-2 inline-block border border-[#8b1414] text-[#8b1414] px-4 py-1 rounded hover:bg-[#8b1414] hover:text-white transition">
@@ -144,8 +152,9 @@ const Page: React.FC = () => {
       </div>
 
       {/* Person 3 */}
-      <div className="w-full lg:w-1/3 text-center px-4">
-        <img src="/images/surajjj.png" alt="Suraj Majhi" className="mx-auto rounded-full w-48 h-48 object-cover" />
+      <div className="w-full lg:w-1/3 text-center px-4 text-black">
+        <Image src="/images/surajjj.png" alt="Suraj Majhi" width={192}
+  height={192} className="mx-auto rounded-full object-cover" />
         <p className="pt-4 font-semibold text-lg">Suraj Majhi</p>
         <p className="text-gray-600">Business Manager</p>
         <a href="https://t.me/sriyog" target="_blank" className="mt-2 inline-block border border-[#8b1414] text-[#8b1414] px-4 py-1 rounded hover:bg-[#8b1414] hover:text-white transition">
@@ -162,5 +171,7 @@ const Page: React.FC = () => {
     </div>
   );
 };
+
+
 
 export default Page;

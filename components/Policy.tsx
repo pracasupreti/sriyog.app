@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       {/* Privacy Policy Content */}
       <section className="w-full bg-gray-100 py-10">
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36">
-          <div className="bg-white p-6 md:p-10 shadow text-justify space-y-6">
+          <div className="bg-white p-6 md:p-10 shadow text-justify space-y-6 text-black">
             <p>Effective Date: <sup>1st</sup> June 2024</p>
 
             <p>
@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl font-semibold">Contact Us</h2>
             <p>
               If you have questions about this policy, contact us at:{" "}
-              <a href="mailto:privacy@sriyog.com" className="text-blue-600 underline">
+              <a href="mailto:privacy@sriyog.com" className="text-black hover:text-[#8b1414]">
                 privacy@sriyog.com
               </a>
             </p>

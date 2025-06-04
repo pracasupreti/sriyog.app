@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FooterBottom() {
   return (
-    <footer className="bg-white border-md shadow-t">
+    <footer className="bg-white border-t shadow-[0_-2px_4px_rgba(0,0,0,0.10)]">
       <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full">
           {/* Copyright */}
@@ -13,7 +13,7 @@ export default function FooterBottom() {
           </p>
 
           {/* Social Icons */}
-          <div className="flex justify-center md:justify-end space-x-6 mt-2 md:mt-0">
+          <div className="flex justify-center md:justify-end space-x-6 mt-2 md:mt-0 text-black">
             {/* Facebook */}
             <a href="https://www.facebook.com/sriyogdotcom" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="currentColor">

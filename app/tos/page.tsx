@@ -1,5 +1,9 @@
-"use client";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "TOS | SRIYOG App",
+  description: "Learn about SRIYOG, its mission, and impact.",
+};
 export default function TermsAndConditions() {
   return (
     <>
@@ -12,7 +16,7 @@ export default function TermsAndConditions() {
 
       {/* Body Section */}
       <section className="bg-gray-100 py-10">
-        <div className="max-w-screen-xl mx-auto bg-white p-6 md:p-10 shadow-md text-sm md:text-base px-3 sm:px-6 md:px-8 lg:px-36">
+        <div className="max-w-screen-xl mx-auto bg-white p-6 md:p-10 shadow-md text-sm md:text-base px-3 sm:px-6 md:px-8 lg:px-36 text-black">
           <p className="mb-4">Last updated: <sup>1st</sup> June, 2024</p>
 
           <p className="mb-4 text-justify">

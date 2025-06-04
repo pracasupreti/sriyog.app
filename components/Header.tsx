@@ -1,9 +1,13 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const path = usePathname();
+
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
@@ -31,12 +35,12 @@ export default function Header() {
           </Link>
 
           <div className="hidden md:flex md:w-auto items-center gap-6" id="navbar-default">
-            <ul className="min-w-0 font-semibold text-[11px] sm:text-xs md:text-[11px] lg:text-sm flex flex-nowrap p-4 md:p-0 mt-4 lg:ml-12 md:flex-row md:space-x-2 lg:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white max-w-full">
+            <ul className="min-w-0 font-semibold text-[11px] sm:text-xs md:text-[11px] lg:text-sm  flex flex-nowrap p-4 md:p-0 mt-4 lg:ml-12 md:flex-row md:space-x-2 lg:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white max-w-full">
               {navItems.map(item => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className="block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent lg:text-[14px] md:p-0 md:text-[13px] max-[1136px]:text-[10px]"
+              className={`block py-2 px-3 text-gray-500 hover:text-[#8B1414] rounded md:bg-transparent lg:text-[14px] md:p-0 md:text-[13px] max-[1136px]:text-[10px] ${path === item.href ? "text-[#8b1414]" : "text-black"}`}
             >
               {item.label}
             </Link>
@@ -56,7 +60,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               id="hamburger"
-              className="text-gray-900 focus:outline-none"
+              className="text-gray-900 focus:outline-none cursor-pointer"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
               aria-expanded={menuOpen}
@@ -95,19 +99,22 @@ export default function Header() {
           menuOpen ? "opacity-100 max-h-screen py-4" : "opacity-0 max-h-0"
         }`}
       >
-        <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36">
-          <a href="https://sriyog.com/" className="block py-2">
+        <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 text-black">
+          <Link href="/" className="block py-2">
             Home
-          </a>
-          <a href="https://sriyog.com/about" className="block py-2">
+          </Link>
+          <Link href="/about" className="block py-2">
             About
-          </a>
-          <a href="https://sriyog.com/services" className="block py-2">
-            Services
-          </a>
-          <a href="https://sriyog.com/contact" className="block py-2">
+          </Link>
+          <Link href="/team" className="block py-2">
+            Team
+          </Link>
+          <Link href="/faq" className="block py-2">
+            FAQ
+          </Link>
+          <Link href="/contact" className="block py-2">
             Contact
-          </a>
+          </Link>
           <Link href="/join">
             <img src="/images/join-now.png" className="h-8 mb-2" alt="Join Now" />
           </Link>

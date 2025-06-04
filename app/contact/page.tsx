@@ -3,6 +3,7 @@ import RedSection from '@/components/RedSection';
 import { FaRegEdit, FaUserShield, FaBullhorn, FaIdBadge } from 'react-icons/fa';
 import { MdEmail, MdSend } from 'react-icons/md';
 import type { Metadata } from "next";
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Contact | SRIYOG App",
@@ -130,7 +131,8 @@ const Page: React.FC = () => {
       
       {/* Person 1 */}
       <div className="w-full lg:w-1/3 text-center px-4 text-black">
-        <img src="/images/niranjan.png" alt="Niranjan Sharma" className="mx-auto rounded-full w-48 h-48 object-cover" />
+        <Image src="/images/niranjan.png" alt="Niranjan Sharma" width={192}
+  height={192} className="mx-auto rounded-full object-cover" />
         <p className="pt-4 font-semibold text-lg">Niranjan Sharma</p>
         <p className="text-gray-600">Project Manager</p>
         <a href="https://t.me/niranjanpm" target="_blank" className="mt-2 inline-block border border-[#8b1414] text-[#8b1414] px-4 py-1 rounded hover:bg-[#8b1414] hover:text-white transition">
@@ -140,7 +142,8 @@ const Page: React.FC = () => {
 
       {/* Person 2 */}
       <div className="w-full lg:w-1/3 text-center px-4 text-black">
-        <img src="/images/aashish.png" alt="Aashis Sunar" className="mx-auto rounded-full w-48 h-48 object-cover" />
+        <Image src="/images/aashish.png" alt="Aashis Sunar" width={192}
+  height={192} className="mx-auto rounded-full object-cover" />
         <p className="pt-4 font-semibold text-lg">Aashis Sunar</p>
         <p className="text-gray-600">Business Development Officer</p>
         <a href="https://wa.me/9779852024365" target="_blank" className="mt-2 inline-block border border-[#8b1414] text-[#8b1414] px-4 py-1 rounded hover:bg-[#8b1414] hover:text-white transition">
@@ -150,7 +153,8 @@ const Page: React.FC = () => {
 
       {/* Person 3 */}
       <div className="w-full lg:w-1/3 text-center px-4 text-black">
-        <img src="/images/surajjj.png" alt="Suraj Majhi" className="mx-auto rounded-full w-48 h-48 object-cover" />
+        <Image src="/images/surajjj.png" alt="Suraj Majhi" width={192}
+  height={192} className="mx-auto rounded-full object-cover" />
         <p className="pt-4 font-semibold text-lg">Suraj Majhi</p>
         <p className="text-gray-600">Business Manager</p>
         <a href="https://t.me/sriyog" target="_blank" className="mt-2 inline-block border border-[#8b1414] text-[#8b1414] px-4 py-1 rounded hover:bg-[#8b1414] hover:text-white transition">

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function HowSRIYOGWorks() {
   const steps = [
     {
@@ -42,11 +44,12 @@ export default function HowSRIYOGWorks() {
               reverse ? "md:flex-row-reverse" : ""
             } items-center mb-16 gap-8 text-black`}
           >
-            <div className="w-full md:w-5/12">
-              <img
+            <div className="w-full md:w-5/12 relative h-64">
+              <Image
                 src={img}
                 alt={`${title} Icon`}
-                className="w-full h-auto object-contain rounded-lg"
+                fill
+                className="object-contain rounded-lg"
               />
             </div>
             <div className="w-full md:w-7/12">

@@ -29,4 +29,12 @@ html {
   scrollbar-gutter: stable;
 }
 
+.swiper-button-prev {
+  @apply -left-8; /* Move more to the left */
+}
+
+.swiper-button-next {
+  @apply -right-8; /* Move more to the right */
+}
+
 

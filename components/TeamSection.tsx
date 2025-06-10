@@ -1,22 +1,66 @@
-import Image from 'next/image';
-import { FaTelegramPlane } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedinIn } from 'react-icons/fa';
-import TeamCard from './TeamCard';
+import Image from "next/image";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import TeamCard from "./TeamCard";
 
 const teamMembers = [
-  { name: 'Yogendra Dhamala', position: 'Chief Executive Officer', image: '/images/yogendra.jpg' },
-  { name: 'Achut Chalise', position: 'Chief Operating Officer', image: '/images/achut.png' },
-  { name: 'Kishor Baskota', position: 'Chief Financial Officer', image: '/images/kishor.png' },
-  { name: 'Pankaj Ghimire', position: 'Chief Branding Officer', image: '/images/pankaj.png' },
-  { name: 'Sudhir Nepal', position: 'Chief Media Officer', image: '/images/sudhir.png' },
-  { name: 'Aavash Adhikari', position: 'Sr. Community Manager', image: '/images/aavash.png' },
-  { name: 'Sobitmaan Shrestha', position: 'Chief Digital Strategist', image: '/images/sobit.png' },
-  { name: 'Isha Sunam', position: 'Data Manager', image: '/images/isha.png' },
-  { name: 'Suraj Majhi', position: 'Business Manager', image: '/images/suraj.png' },
-  { name: 'Nischal Bhagat', position: 'UAE Team Leader', image: '/images/nischal.png' },
-  { name: 'Falguni Dahal', position: 'Community Manager', image: '/images/falguni.png' },
-  { name: 'Dipak Bohora', position: 'Community Manager', image: '/images/dipak.png' },
+  {
+    name: "Yogendra Dhamala",
+    position: "Chief Executive Officer",
+    image: "/images/yogendra.jpg",
+  },
+  {
+    name: "Achut Chalise",
+    position: "Chief Operating Officer",
+    image: "/images/achut.png",
+  },
+  {
+    name: "Kishor Baskota",
+    position: "Chief Financial Officer",
+    image: "/images/kishor.png",
+  },
+  {
+    name: "Pankaj Ghimire",
+    position: "Chief Branding Officer",
+    image: "/images/pankaj.png",
+  },
+  {
+    name: "Sudhir Nepal",
+    position: "Chief Media Officer",
+    image: "/images/sudhir.png",
+  },
+  {
+    name: "Aavash Adhikari",
+    position: "Sr. Community Manager",
+    image: "/images/aavash.png",
+  },
+  {
+    name: "Sobitmaan Shrestha",
+    position: "Chief Digital Strategist",
+    image: "/images/sobit.png",
+  },
+  { name: "Isha Sunam", position: "Data Manager", image: "/images/isha.png" },
+  {
+    name: "Suraj Majhi",
+    position: "Business Manager",
+    image: "/images/suraj.png",
+  },
+  {
+    name: "Nischal Bhagat",
+    position: "UAE Team Leader",
+    image: "/images/nischal.png",
+  },
+  {
+    name: "Falguni Dahal",
+    position: "Community Manager",
+    image: "/images/falguni.png",
+  },
+  {
+    name: "Dipak Bohora",
+    position: "Community Manager",
+    image: "/images/dipak.png",
+  },
 ];
 
 export default function TeamSection() {
@@ -34,7 +78,7 @@ export default function TeamSection() {
             />
             <h4 className="text-xl font-semibold mt-0 text-center">PRACAS Upreti</h4>
             <h5 className="text-gray-600 text-sm text-center">Founder</h5>
-        </div>  
+        </div>
         <div className="flex-1">
           <h3 className="text-2xl font-semibold mb-4">About PRACAS</h3>
           <p className="mb-4">

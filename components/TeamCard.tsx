@@ -1,19 +1,30 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-const TeamCard = ({ name, position, image }: { name: string; position: string; image: string }) => {
+const TeamCard = ({
+  name,
+  position,
+  image,
+}: {
+  name: string;
+  position: string;
+  image: string;
+}) => {
   return (
-    <div className="bg-gray-100 shadow-md rounded-xl p-6 min-h-[300px] flex flex-col items-center justify-start text-center">
-      <div className="mb-8">
+    <div className="bg-gray-100 shadow-md rounded-xl p-6 min-h-[300px] flex flex-col items-center justify-start text-center shadow-md border border-gray-300 bg-white hover:shadow-xl transition duration-300">
+      {/* Make this a flex column and center items */}
+      <div className="flex flex-col items-center mt-6">
         <Image
           src={image}
           alt={name}
-          width={100}
-          height={100}
+          width={120}
+          height={120}
           className="rounded-full object-cover"
         />
+        <div className="mt-4">
+          <h4 className="text-sm font-semibold">{name}</h4>
+          <p className="text-gray-500">{position}</p>
+        </div>
       </div>
-      <h4 className="text-lg font-semibold">{name}</h4>
-      <p className="text-gray-500">{position}</p>
     </div>
   );
 };

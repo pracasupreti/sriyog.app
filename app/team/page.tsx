@@ -1,6 +1,7 @@
-import RedSection from '@/components/RedSection';
-import Image from 'next/image';
-import TeamSection from '@/components/TeamSection';
+import RedSection from "@/components/RedSection";
+import Image from "next/image";
+import TeamCard from "@/components/TeamCard";
+import TeamSection from "@/components/TeamSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,57 +11,57 @@ export const metadata: Metadata = {
 
 const teamMembers = [
   {
-    name: 'PRACAS Upreti',
-    title: 'Founder',
-    image: '/gallery.jpg', // Replace with actual image path
+    name: "PRACAS Upreti",
+    title: "Founder",
+    image: "/gallery.jpg", // Replace with actual image path
   },
   {
-    name: 'Yogendra Dhamala',
-    title: 'Chief Executive Officer',
+    name: "Yogendra Dhamala",
+    title: "Chief Executive Officer",
   },
   {
-    name: 'Achut Chalise',
-    title: 'Chief Operating Officer',
+    name: "Achut Chalise",
+    title: "Chief Operating Officer",
   },
   {
-    name: 'Kishor Baskota',
-    title: 'Chief Financial Officer',
+    name: "Kishor Baskota",
+    title: "Chief Financial Officer",
   },
   {
-    name: 'Pankaj Ghimire',
-    title: 'Chief Branding Officer',
+    name: "Pankaj Ghimire",
+    title: "Chief Branding Officer",
   },
   {
-    name: 'Sudhir Nepal',
-    title: 'Chief Media Officer',
+    name: "Sudhir Nepal",
+    title: "Chief Media Officer",
   },
   {
-    name: 'Aavash Adhikari',
-    title: 'Sr. Community Manager',
+    name: "Aavash Adhikari",
+    title: "Sr. Community Manager",
   },
   {
-    name: 'Sobitmaan Shrestha',
-    title: 'Chief Digital Strategist',
+    name: "Sobitmaan Shrestha",
+    title: "Chief Digital Strategist",
   },
   {
-    name: 'Isha Sunam',
-    title: 'Data Manager',
+    name: "Isha Sunam",
+    title: "Data Manager",
   },
   {
-    name: 'Suraj Majhi',
-    title: 'Business Manager',
+    name: "Suraj Majhi",
+    title: "Business Manager",
   },
   {
-    name: 'Nischal Bhagat',
-    title: 'UAE Team Leader',
+    name: "Nischal Bhagat",
+    title: "UAE Team Leader",
   },
   {
-    name: 'Falguuni Dahal',
-    title: 'Community Manager',
+    name: "Falguuni Dahal",
+    title: "Community Manager",
   },
   {
-    name: 'Dipak Bohora',
-    title: 'Community Manager',
+    name: "Dipak Bohora",
+    title: "Community Manager",
   },
 ];
 
@@ -69,7 +70,7 @@ const Page = () => {
     <>
       <RedSection title="Team" />
       <TeamSection />
-     </> 
+    </>
   );
 };
 

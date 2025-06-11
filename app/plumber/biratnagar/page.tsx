@@ -6,88 +6,94 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export const metadata: Metadata = {
-  title: "Plumber | SRIYOG App",
+  title: "Plumber in Biratnagar | SRIYOG App",
   description: "Learn about SRIYOG, its mission, and impact.",
 };
 
 const professions = [
   {
     img: "/images/defaultlogo.png",
-    title: "Utsav Thapa Magar",
-    phone: "9841234567",
+    title: "Dipen Mandal",
+    phone: "9803234501",
     type: "Plumber",
-    address: "Kathmandu",
+    address: "Tintoliya",
   },
   {
     img: "/images/defaultlogo.png",
-    title: "Smith Acharya",
-    phone: "9807654321",
+    title: "Rachana Sharma",
+    phone: "9803234502",
     type: "Plumber",
-    address: "Kathmandu",
-    place: "Kamalpokhari",
+    address: "Milan Chowk",
   },
   {
     img: "/images/defaultlogo.png",
-    title: "Rajesh Pathak",
-    phone: "9807654321",
+    title: "Suraj Yadav",
+    phone: "9803234503",
     type: "Plumber",
-    address: "Pokhara",
+    address: "Roadshesh Chowk",
   },
   {
     img: "/images/defaultlogo.png",
-    title: "Utsav Khadka",
-    phone: "9807654321",
+    title: "Bipana Singh",
+    phone: "9803234504",
     type: "Plumber",
-    address: "Kathmandu",
+    address: "Biratnagar-5",
   },
   {
     img: "/images/defaultlogo.png",
-    title: "Roshan Bahadur",
-    phone: "9807654321",
+    title: "Sandeep Gupta",
+    phone: "9803234505",
     type: "Plumber",
-    address: "Sunsari",
+    address: "Rani",
   },
   {
     img: "/images/defaultlogo.png",
-    title: "Jiban Poudel",
-    phone: "9807654321",
+    title: "Kajal Chaudhary",
+    phone: "9803234506",
     type: "Plumber",
-    address: "Pokhara",
+    address: "Hatkhola",
   },
   {
     img: "/images/defaultlogo.png",
-    title: "Janak Khadka",
-    phone: "9807654321",
+    title: "Abhishek Das",
+    phone: "9803234507",
     type: "Plumber",
-    address: "Rupandehi",
+    address: "Devkota Chowk",
   },
   {
     img: "/images/defaultlogo.png",
-    title: "Dipesh Parajuli",
-    phone: "9807654321",
+    title: "Puja Sah",
+    phone: "9803234508",
     type: "Plumber",
-    address: "Makwanpur",
+    address: "Traffic Chowk",
   },
   {
     img: "/images/defaultlogo.png",
-    title: "Udaya Raj",
-    phone: "9807654321",
+    title: "Roshan Jha",
+    phone: "9803234509",
     type: "Plumber",
-    address: "Sunsari",
+    address: "Shankarpur",
+  },
+  {
+    img: "/images/defaultlogo.png",
+    title: "Alisha Karki",
+    phone: "9803234510",
+    type: "Plumber",
+    address: "Morang College Area",
   },
 ];
 
 export default function FeaturesSection() {
   return (
     <>
-      <RedSection title="Plumber" />
+      <RedSection title="Plumber in Biratnagar" />
       <section className="w-full bg-white text-black pt-10">
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-4">
           <div className="w-full flex justify-end p-4 px-0 py-4 -mt-12 mb-2">
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50">
-                  Kathmandu
+                  Biratnagar
                   <ChevronDownIcon
                     aria-hidden="true"
                     className="-mr-1 size-5 text-gray-400"
@@ -102,7 +108,16 @@ export default function FeaturesSection() {
                 <div className="py-1">
                   <MenuItem>
                     <a
-                      href="#"
+                      href="/plumber/kathmandu"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Kathmandu
+                    </a>
+                  </MenuItem>
+
+                  <MenuItem>
+                    <a
+                      href="/plumber/pokhara"
                       className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                     >
                       Pokhara
@@ -110,7 +125,7 @@ export default function FeaturesSection() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="#"
+                      href="/plumber/chitwan"
                       className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                     >
                       Chitwan
@@ -118,15 +133,7 @@ export default function FeaturesSection() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                    >
-                      Biratnagar
-                    </a>
-                  </MenuItem>
-                  <MenuItem>
-                    <a
-                      href="#"
+                      href="/plumber/janakpur"
                       className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                     >
                       Janakpur
@@ -134,7 +141,7 @@ export default function FeaturesSection() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="#"
+                      href="birgunj"
                       className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                     >
                       Birgunj
@@ -142,7 +149,7 @@ export default function FeaturesSection() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="#"
+                      href="/plumber/dharan"
                       className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                     >
                       Dharan
@@ -183,9 +190,6 @@ export default function FeaturesSection() {
                   </span>
                   <span className="text-sm font-bold text-gray-700 mt-1">
                     {item.address}
-                  </span>
-                  <span className="text-xs font-medium text-gray-700 mt-1">
-                    {item.place}
                   </span>
 
                   <button

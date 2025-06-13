@@ -1,6 +1,6 @@
-"use client"
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
+"use client";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Learn about SRIYOG, its mission, and impact.",
 };
 
-const images = ['/images/1.jpg', '/images/2.jpg'];
+const images = ["/images/1.jpg", "/images/2.jpg"];
 
 export default function ClientVMGO() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,14 +24,15 @@ export default function ClientVMGO() {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       {/* Carousel Section */}
-      <div className="relative w-full max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-md shadow-md">
+      <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-md shadow-md">
         {images.map((img, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
-              }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
           >
             <Image
               src={img}
@@ -80,7 +81,7 @@ export default function ClientVMGO() {
       {/* Icon Grid */}
       <section className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-8">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-          {['Vision', 'Mission', 'Goals', 'Objectives'].map((item, index) => (
+          {["Vision", "Mission", "Goals", "Objectives"].map((item, index) => (
             <div key={item} className="mt-3">
               <Image
                 src={`/images/vmgo/${index + 1}.png`}
@@ -100,59 +101,63 @@ export default function ClientVMGO() {
       {/* Content Sections */}
       {[
         {
-          title: 'Vision',
-          textColor: 'text-gray-900',
-          bgColor: 'bg-gray-100',
-          image: '/images/vmgo/1.png',
+          title: "Vision",
+          textColor: "text-gray-900",
+          bgColor: "bg-gray-100",
+          image: "/images/vmgo/1.png",
           content: [
-            'Our vision at SRIYOG is to create a future where every individual has access to opportunities that match their skills and aspirations.',
-            'We envision a world where people searching for any service can easily connect with skilled professionals rather than hiring hefty commission from any service marketplace, and where an individual can have his/her digital profile showcasing their expertise.',
+            "Our vision at SRIYOG is to create a future where every individual has access to opportunities that match their skills and aspirations.",
+            "We envision a world where people searching for any service can easily connect with skilled professionals rather than hiring hefty commission from any service marketplace, and where an individual can have his/her digital profile showcasing their expertise.",
           ],
           reverse: false,
         },
         {
-          title: 'Mission',
-          textColor: 'text-white',
-          bgColor: 'bg-[#8b1414]',
-          image: '/images/vmgo/2.png',
+          title: "Mission",
+          textColor: "text-white",
+          bgColor: "bg-[#8b1414]",
+          image: "/images/vmgo/2.png",
           content: [
-            'At SRIYOG, our mission is to revolutionize the way work is connected with workers. We strive to provide a seamless platform that empowers individuals and businesses to find the perfect match for their needs, fostering opportunities for growth, collaboration, and success.',
+            "At SRIYOG, our mission is to revolutionize the way work is connected with workers. We strive to provide a seamless platform that empowers individuals and businesses to find the perfect match for their needs, fostering opportunities for growth, collaboration, and success.",
           ],
           reverse: true,
         },
         {
-          title: 'Goals',
-          textColor: 'text-gray-900',
-          bgColor: 'bg-gray-100',
-          image: '/images/vmgo/3.png',
+          title: "Goals",
+          textColor: "text-gray-900",
+          bgColor: "bg-gray-100",
+          image: "/images/vmgo/3.png",
           listItems: [
-            'Facilitate Connections: Transparent and efficient interactions between users.',
-            'Promote Transparency: Verification processes build trust across the platform.',
-            'Empower Individuals: Equal access and inclusion for diverse communities.',
-            'Drive Innovation: Constantly evolving with tech trends to improve experience.',
+            "Facilitate Connections: Transparent and efficient interactions between users.",
+            "Promote Transparency: Verification processes build trust across the platform.",
+            "Empower Individuals: Equal access and inclusion for diverse communities.",
+            "Drive Innovation: Constantly evolving with tech trends to improve experience.",
           ],
           reverse: false,
         },
         {
-          title: 'Objectives',
-          textColor: 'text-white',
-          bgColor: 'bg-[#8b1414]',
-          image: '/images/vmgo/4.png',
+          title: "Objectives",
+          textColor: "text-white",
+          bgColor: "bg-[#8b1414]",
+          image: "/images/vmgo/4.png",
           listItems: [
-            'Expand Reach: Make the platform accessible to wider demographics.',
-            'Enhance User Experience: Simplify and optimize the platform usability.',
-            'Build Partnerships: Collaborate with institutions for growth.',
-            'Promote Diversity and Inclusion: Ensure equality across users.',
-            'Drive Customer Satisfaction: Feedback-driven improvements.',
+            "Expand Reach: Make the platform accessible to wider demographics.",
+            "Enhance User Experience: Simplify and optimize the platform usability.",
+            "Build Partnerships: Collaborate with institutions for growth.",
+            "Promote Diversity and Inclusion: Ensure equality across users.",
+            "Drive Customer Satisfaction: Feedback-driven improvements.",
           ],
           reverse: true,
         },
       ].map(
-        ({ title, textColor, bgColor, image, content, listItems, reverse }, index) => (
+        (
+          { title, textColor, bgColor, image, content, listItems, reverse },
+          index
+        ) => (
           <section
             key={index}
-            className={`max-w-screen-2xl mx-auto px-6 sm:px-12 md:px-16 lg:px-20 flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''
-              } mt-10 mb-[45px] gap-6`}
+            className={`max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-8 flex flex-col md:flex-row ${
+              reverse ? "md:flex-row-reverse" : ""
+            } mt-10 mb-[45px] gap-6`}
           >
             <div className="md:w-1/2 flex justify-center items-center">
               <Image
@@ -163,22 +168,29 @@ export default function ClientVMGO() {
                 className="object-contain"
               />
             </div>
-            <div className={`${bgColor} ${textColor} md:w-1/2 p-6 sm:p-10 rounded-md shadow-md`}>
-              <h2 className="text-xl sm:text-2xl font-semibold mb-4">{title}</h2>
+            <div
+              className={`${bgColor} ${textColor} md:w-1/2 p-6 sm:p-10 rounded-md shadow-md`}
+            >
+              <h2 className="text-xl sm:text-2xl font-semibold mb-4">
+                {title}
+              </h2>
               {content &&
                 content.map((paragraph, idx) => (
-                  <p key={idx} className="mb-3 text-justify text-sm sm:text-base">
+                  <p
+                    key={idx}
+                    className="mb-3 text-justify text-sm sm:text-base"
+                  >
                     {paragraph}
                   </p>
                 ))}
               {listItems && (
                 <ul className="list-disc pl-5 space-y-3 text-sm sm:text-base">
                   {listItems.map((item, i) => {
-                    const [strong, ...rest] = item.split(':');
+                    const [strong, ...rest] = item.split(":");
                     return (
                       <li key={i}>
-                        <strong>{strong}:</strong>{' '}
-                        {rest.length > 0 ? rest.join(':').trim() : ''}
+                        <strong>{strong}:</strong>{" "}
+                        {rest.length > 0 ? rest.join(":").trim() : ""}
                       </li>
                     );
                   })}

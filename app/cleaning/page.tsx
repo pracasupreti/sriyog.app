@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import StarRating from "@/components/StarRating";
 
 export const metadata: Metadata = {
   title: "Cleaning Companies in Nepal | SRIYOG App",
@@ -76,7 +77,7 @@ const professions = [
   },
   {
     name: "Kathmandu Pest Control Service",
-    img: "/images/logo.png",
+    img: "/images/cleaning/companylogo/gt.png",
     city: "Basundhara, Kathmandu, Nepal",
     description:
       "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
@@ -96,7 +97,7 @@ export default function FeaturesSection() {
               <Link key={index} href={item.link}>
                 <div
                   role="status"
-                  className="space-y-8 flex flex-col items-center justify-center border border-gray-200 rounded-lg p-6 min-h-[500px] shadow-md border border-gray-300 bg-white hover:shadow-xl transition duration-300"
+                  className="space-y-8 flex flex-col items-center justify-center border border-gray-200 rounded-lg p-6 min-h-[500px] shadow-md border border-gray-200 bg-gray-100 hover:shadow-xl transition duration-300"
                 >
                   <div className="flex items-center justify-center bg-gray-200 w-full h-48 rounded-sm ">
                     <Image
@@ -110,68 +111,7 @@ export default function FeaturesSection() {
                   <div className="text-black mt-0 text-center text-lg font-semibold mb-2">
                     {item.name}
                   </div>
-                  <div className="flex">
-                    <svg
-                      width="16"
-                      height="15"
-                      viewBox="0 0 16 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z"
-                        fill="#FF532E"
-                      />
-                    </svg>
-                    <svg
-                      width="16"
-                      height="15"
-                      viewBox="0 0 16 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z"
-                        fill="#FF532E"
-                      />
-                    </svg>
-                    <svg
-                      width="16"
-                      height="15"
-                      viewBox="0 0 16 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z"
-                        fill="#FF532E"
-                      />
-                    </svg>
-                    <svg
-                      width="16"
-                      height="15"
-                      viewBox="0 0 16 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z"
-                        fill="#FF532E"
-                      />
-                    </svg>
-                    <svg
-                      width="16"
-                      height="15"
-                      viewBox="0 0 16 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z"
-                        fill="#FF532E"
-                      />
-                    </svg>
-                  </div>
+                  <StarRating rating={5} />
                   <div className="text-black -mt-2 text-center text-sm font-semibold mb-2">
                     {item.city}
                   </div>

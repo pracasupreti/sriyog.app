@@ -36,7 +36,7 @@ const professions = [
 export default function FeaturesSection() {
   return (
     <>
-        <RedSection title="SRIYOG Professions" />
+      <RedSection title="SRIYOG Professions" />
       <section className="w-full bg-white text-black pt-10">
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-black">
@@ -45,7 +45,10 @@ export default function FeaturesSection() {
                 key={index}
                 className="flex flex-col items-center text-center border rounded-lg p-4 hover:shadow-md hover:bg-gray-100 transition"
               >
-                <Link href={`/professions/${item.title.toLowerCase().replace(/\s+/g, "-")}`} className="block">
+                <Link
+                  href={`/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="block"
+                >
                   <Image
                     src={`/images/services/${item.img}`}
                     alt={`${item.title} Icon`}

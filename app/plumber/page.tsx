@@ -165,7 +165,7 @@ export default function FeaturesSection() {
             {professions.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center rounded-xl p-2 min-h-[400px] shadow-md border border-gray-300 bg-white hover:shadow-xl transition duration-300"
+                className="flex flex-col items-center text-center rounded-xl p-2 min-h-[400px] shadow-md border border-gray-300 bg-gray-100 hover:shadow-xl transition duration-300"
               >
                 <Link
                   href={`/professions/${item.title

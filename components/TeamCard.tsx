@@ -10,9 +10,9 @@ const TeamCard = ({
   image: string;
 }) => {
   return (
-    <div className="bg-gray-100 shadow-md rounded-xl p-6 min-h-[300px] flex flex-col items-center justify-start text-center border border-gray-300 hover:shadow-xl transition duration-300">
+    <div className="bg-gray-100 shadow-md rounded-xl p-6 min-h-[300px] flex flex-col justify-center items-center text-center border border-gray-300 hover:shadow-xl transition duration-300">
       {/* Make this a flex column and center items */}
-      <div className="flex flex-col items-center mt-6">
+      <div className="flex flex-col items-center">
         <Image
           src={image}
           alt={name}

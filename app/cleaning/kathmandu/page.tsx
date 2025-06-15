@@ -7,7 +7,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import StarRating from "@/components/StarRating";
 
 export const metadata: Metadata = {
-  title: "Cleaning Companies in Nepal | SRIYOG App",
+  title: "Cleaning Companies in Kathmandu | SRIYOG App",
   description: "Learn about SRIYOG, its mission, and impact.",
 };
 
@@ -97,7 +97,7 @@ const professions = [
 export default function FeaturesSection() {
   return (
     <>
-      <RedSection title="Cleaning Companies in Nepal" />
+      <RedSection title="Cleaning Companies in Kathmandu" />
       <section className="w-full bg-white text-black pt-10">
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-4">
           <div className="w-full flex justify-end p-4 px-0 py-4 -mt-12 mb-2"></div>
@@ -105,7 +105,7 @@ export default function FeaturesSection() {
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50">
-                  All Cities
+                  Kathmandu
                   <ChevronDownIcon
                     aria-hidden="true"
                     className="-mr-1 size-5 text-gray-400"
@@ -118,14 +118,6 @@ export default function FeaturesSection() {
                 className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
               >
                 <div className="py-1">
-                  <MenuItem>
-                    <a
-                      href="/cleaning/kathmandu"
-                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                    >
-                      Kathmandu
-                    </a>
-                  </MenuItem>
                   <MenuItem>
                     <a
                       href="/cleaning/pokhara"
@@ -197,7 +189,7 @@ export default function FeaturesSection() {
                   <div className="text-black mt-0 text-center text-lg font-semibold mb-2">
                     {item.name}
                   </div>
-                  <StarRating rating={3} />
+                  <StarRating rating={4} />
                   <div className="text-black -mt-2 text-center text-sm font-semibold mb-2">
                     {item.city}
                   </div>

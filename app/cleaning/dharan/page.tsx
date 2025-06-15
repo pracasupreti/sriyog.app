@@ -7,7 +7,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import StarRating from "@/components/StarRating";
 
 export const metadata: Metadata = {
-  title: "Cleaning Companies in Nepal | SRIYOG App",
+  title: "Cleaning Companies in Dharan | SRIYOG App",
   description: "Learn about SRIYOG, its mission, and impact.",
 };
 
@@ -32,7 +32,7 @@ const professions = [
   {
     name: "Easy Facilities Pvt. Ltd.",
     img: "/images/cleaning/companylogo/ce.png",
-    city: "Jarebar, Pokhara, Nepal",
+    city: "Jarebar, Janakpur, Nepal",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
@@ -97,7 +97,7 @@ const professions = [
 export default function FeaturesSection() {
   return (
     <>
-      <RedSection title="Cleaning Companies in Nepal" />
+      <RedSection title="Cleaning Companies in Dharan" />
       <section className="w-full bg-white text-black pt-10">
         <div className="max-w-screen-xl mx-auto px-3 sm:px-6 md:px-8 lg:px-36 py-4">
           <div className="w-full flex justify-end p-4 px-0 py-4 -mt-12 mb-2"></div>
@@ -105,7 +105,7 @@ export default function FeaturesSection() {
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50">
-                  All Cities
+                  Dharan
                   <ChevronDownIcon
                     aria-hidden="true"
                     className="-mr-1 size-5 text-gray-400"
@@ -144,7 +144,7 @@ export default function FeaturesSection() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="/cleaning/biratnagar"
+                      href="/cleaning/Biratnagar"
                       className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                     >
                       Biratnagar
@@ -160,18 +160,10 @@ export default function FeaturesSection() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="birgunj"
+                      href="/cleaning/birgunj"
                       className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                     >
                       Birgunj
-                    </a>
-                  </MenuItem>
-                  <MenuItem>
-                    <a
-                      href="/cleaning/dharan"
-                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                    >
-                      Dharan
                     </a>
                   </MenuItem>
                 </div>
@@ -197,7 +189,7 @@ export default function FeaturesSection() {
                   <div className="text-black mt-0 text-center text-lg font-semibold mb-2">
                     {item.name}
                   </div>
-                  <StarRating rating={3} />
+                  <StarRating rating={5} />
                   <div className="text-black -mt-2 text-center text-sm font-semibold mb-2">
                     {item.city}
                   </div>
